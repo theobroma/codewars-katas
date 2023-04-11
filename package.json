@@ -23,10 +23,13 @@
     "jest": "^22.4.0",
     "regenerator-runtime": "^0.13.7"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "prettier": "^2.8.7"
+  },
   "scripts": {
     "test": "jest",
-    "watch": "jest --watch"
+    "watch": "jest --watch",
+    "format": "prettier --write src/**/*.{js,jsx,ts,tsx,yml,json,css,scss,md}"
   },
   "repository": {
     "type": "git",
