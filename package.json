@@ -2,7 +2,14 @@
   "name": "codewars-katas",
   "version": "1.0.0",
   "description": "Codewars katas",
+  "keywords": [],
+  "license": "ISC",
   "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "watch": "jest --watch",
+    "format": "prettier --write src/**/*.{js,jsx,ts,tsx,yml,json,css,scss,md}"
+  },
   "babel": {
     "presets": [
       "es2015",
@@ -10,8 +17,8 @@
     ]
   },
   "jest": {
-    "verbose": true,
-    "testURL": "http://localhost/"
+    "testURL": "http://localhost/",
+    "verbose": true
   },
   "dependencies": {
     "babel-cli": "^6.26.0",
@@ -26,20 +33,7 @@
   "devDependencies": {
     "prettier": "^2.8.7"
   },
-  "scripts": {
-    "test": "jest",
-    "watch": "jest --watch",
-    "format": "prettier --write src/**/*.{js,jsx,ts,tsx,yml,json,css,scss,md}"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/theobroma/codewars-katas.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/theobroma/codewars-katas/issues"
-  },
-  "homepage": "https://github.com/theobroma/codewars-katas#readme"
+  "engines": {
+    "node": "^18.x"
+  }
 }
